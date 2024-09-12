@@ -12,7 +12,7 @@ export default function TaskList(){
   }
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:4000/task/${id}`, {
+    await fetch(`http://localhost:4000/tasks/${id}`, {
     method: "DELETE"
     })
     setTasks(tasks.filter(task => task.id !== id));
