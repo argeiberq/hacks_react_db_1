@@ -1,0 +1,7 @@
+CREATE DATABASE userdb
+
+CREATE TABLE usuario(
+    _name VARCHAR(20) PRIMARY KEY,
+    age INTEGER NOT NULL,
+    email VARCHAR(100) 
+);
