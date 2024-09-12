@@ -42,7 +42,7 @@ export default function TaskList(){
             }}
             key={task.id}>
               <div>
-              <Typography>{task._name}</Typography>
+              <Typography>{(task._name.length <= 10) ? task._name : task._name.slice(0, 10) + '...'}</Typography>
               <Typography>{task.age}</Typography>
               <Typography>{task.email}</Typography>
               </div>
